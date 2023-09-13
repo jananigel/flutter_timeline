@@ -8,14 +8,15 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightBlueAccent.shade100,
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 5.0, vertical: 2.0),
+        padding: const EdgeInsets.symmetric(horizontal: 55.0, vertical: 2.0),
         child: ListView(
           children: [
-            Timeline(isFirst: true, isLast: false, isPast: true),
-            Timeline(isFirst: false, isLast: false, isPast: true),
-            Timeline(isFirst: false, isLast: false, isPast: true),
-            Timeline(isFirst: false, isLast: true, isPast: true),
+            Timeline(isFirst: true, isLast: false, isPast: true, eventCard: Text('Event 1')),
+            Timeline(isFirst: false, isLast: false, isPast: true, eventCard: Text('Event 2')),
+            Timeline(isFirst: false, isLast: false, isPast: true, eventCard: Text('Event 3')),
+            Timeline(isFirst: false, isLast: true, isPast: false, eventCard: Text('Event 4')),
           ],
         ),
       ),
