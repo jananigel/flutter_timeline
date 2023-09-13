@@ -9,6 +9,10 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent.shade100,
+      appBar: AppBar(
+        title: Text('Order Process'),
+        centerTitle: true,
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 55.0, vertical: 2.0),
         child: ListView(
